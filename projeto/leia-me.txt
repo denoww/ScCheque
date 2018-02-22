@@ -1,1 +1,3 @@
-Só funciona se instalar Windows XP + Delphi 7
+SÃ³ funciona se instalar Windows XP + Delphi 7
+F9 para rodar
+Control + F9 para gerar o .exe
