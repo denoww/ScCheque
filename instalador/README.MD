@@ -1,12 +1,14 @@
-# InstalaÁ„o
+# Instala√ß√£o
 
-  Copie todos os arquivos que est„o dentro da pasta DLL para C:\Windows
+  Copie todos os arquivos que est√£o dentro da pasta DLL para C:\Windows
 
   Copie ScCheque.exe para a pasta C:
+  
+  Execute o arquivo instalar_navegador.reg
 
 # Como Imprimir
 
-## Impress„o B·sica
+## Impress√£o B√°sica
 
    Pressione: tecla windows + R
 
