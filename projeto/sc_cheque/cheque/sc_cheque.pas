@@ -28,7 +28,7 @@ var
   portas : array[0..8] of string = ('COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM6', 'LPT1', 'LPT2', 'LPT3');
   Form1: TForm1;
   i, retornoPorta, retornoImpressao : integer;
-  msg_validacao, msg, data, cidade, favorecido, porta, banco, valor: string;
+  msgParamsEnviados, msg_validacao, msg, data, cidade, favorecido, porta, banco, valor: string;
   helpCommand : string = 'Parâmetros Inválidos. Tente o comando: ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" "Bom p/ 01/01/2019"';
 implementation
   // BEMATECH funcitions
@@ -69,15 +69,17 @@ implementation
         begin
           banco      := IfNull(banco, '341'); // banco do brasil
           valor      := IfNull(valor, '150,00');
-          favorecido := IfNull(favorecido, 'Jose da Silva');
           cidade     := IfNull(cidade, 'Curitiba');
           data       := IfNull(data, '15102003');
+          favorecido := IfNull(favorecido, 'Jose da Silva');
           msg        := IfNull(msg, '');
         end;
+        
+      msgParamsEnviados := 'Params Enviados - banco: '+banco+', valor: '+valor+', cidade: '+cidade+', data: '+data+', favorecido: '+favorecido+', msg: '+msg;
 
       if (banco = '') or (valor = '') or (cidade = '') or (data = '') then
         begin
-          alert(helpCommand);
+          alert(msgParamsEnviados+#13#10#13#10+helpCommand);
           exitProgram();
         end;
     end;
@@ -87,7 +89,6 @@ implementation
       for i := 0 to (length(portas)-2) do
         begin
         porta := portas[i];
-        //alert(porta);
         retornoPorta := Bematech_DP_IniciaPorta(porta);
         if retornoPorta = 1 then
           Break;
