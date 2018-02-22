@@ -8,7 +8,16 @@
 
 # Como Imprimir
 
-## Impressão Básica
+## Imprimir pelo navegador
+
+  Código Html
+  <a href='ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01"'>Teste aqui</a>
+
+[Teste aqui](ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01")
+
+## Imprimir com linhas de comando
+
+### Impressão Básica
 
    Pressione: tecla windows + R
 
@@ -16,7 +25,7 @@
 
    Pression ENTER
 
-## Cheque Nominal e Mensagem
+### Cheque Nominal e Mensagem
 
   Pressione: tecla windows + R
 
