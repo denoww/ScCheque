@@ -12,7 +12,9 @@
 
   Código Html
   ```html
-<a href='ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01"'>Teste aqui</a>
+<a href='ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01"'>Imprimir</a>
+<a href='ScCheque:"001" "150,00" "Curitiba" "31122018" " " " "'>Imprimir Campos Básicos</a>
+<a href='ScCheque:"001" "150,00" "Curitiba" "31122018" " " "Bom p/ 01/01"'>Sem Favorecido</a>
 ```
 
   
