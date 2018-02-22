@@ -11,9 +11,9 @@
 ## Imprimir pelo navegador
 
   Código Html
+  
   <a href='ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01"'>Teste aqui</a>
 
-[Teste aqui](ScCheque:001)
 
 ## Imprimir com linhas de comando
 
