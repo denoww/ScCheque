@@ -30,12 +30,14 @@ var
   i, retornoPorta, retornoImpressao : integer;
   msgParamsEnviados, msg_validacao, msg, data, cidade, favorecido, porta, banco, valor: string;
   helpCommand : string = 'Parâmetros Inválidos. Tente o comando: ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" "Bom p/ 01/01/2019"';
+
 implementation
+
   // BEMATECH funcitions
   function Bematech_DP_IniciaPorta(Porta: string): integer; stdcall; far; external 'BemaDP32.dll';
   function Bematech_DP_FechaPorta: integer; stdcall; far; external 'BemaDP32.dll';
   function Bematech_DP_ImprimeCheque(Banco: string; Valor: string; Favorecido: string; Cidade: string; Data: string; Mensagem: string): integer; stdcall; far; external 'BemaDP32.dll';
-
+ 
   procedure exitProgram();
     begin
       Halt(4);
@@ -64,6 +66,8 @@ implementation
       favorecido := paramstr(5);
       msg        := paramstr(6);
 
+      banco := Copy(banco, length(banco)-2, 4); // Navegadores de Internet adicionam ScCheque: no primeiro parâmetro (banco), e aqui precisamos remover
+
       // impressao teste quando não enviamos parametros
       if banco = '' then
         begin
@@ -74,7 +78,7 @@ implementation
           favorecido := IfNull(favorecido, 'Jose da Silva');
           msg        := IfNull(msg, '');
         end;
-        
+
       msgParamsEnviados := 'Params Enviados - banco: '+banco+', valor: '+valor+', cidade: '+cidade+', data: '+data+', favorecido: '+favorecido+', msg: '+msg;
 
       if (banco = '') or (valor = '') or (cidade = '') or (data = '') then
@@ -86,13 +90,14 @@ implementation
 
   procedure abrirPorta();
     begin
-      for i := 0 to (length(portas)-2) do
+      for i := 0 to (length(portas)-1) do
         begin
-        porta := portas[i];
-        retornoPorta := Bematech_DP_IniciaPorta(porta);
-        if retornoPorta = 1 then
-          Break;
-      end;
+          porta := portas[i];
+          // alert(porta);
+          retornoPorta := Bematech_DP_IniciaPorta(porta);
+          if retornoPorta = 1 then
+            Break;
+        end;
     end;
 
   procedure imprimir(Banco: string; Valor: string; Favorecido: string; Cidade: string; Data: string; Mensagem: string);
