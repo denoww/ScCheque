@@ -11,7 +11,7 @@
 ## Imprimir pelo navegador
 
   Código Html
-  ```language
+  ```html
 <a href='ScCheque:"001" "150,00" "Curitiba" "31122018" "Flavio Barros" "Bom p/ 01/01"'>Teste aqui</a>
 ```
 
