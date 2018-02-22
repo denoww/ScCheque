@@ -20,13 +20,13 @@
   
 
 
-## Imprimir com linhas de comando
+## Imprimir no Windows
 
 ### Impressão Básica
 
    Pressione: tecla windows + R
 
-   C:\ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva"
+   C:\ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" " " " "
 
    Pression ENTER
 
