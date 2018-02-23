@@ -8,7 +8,7 @@
       
     se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
-  Só funcinoa no windows (restrição da empresa Bematech)
+  Só funciona no windows (restrição da empresa Bematech)
 
 # Como Imprimir
 
