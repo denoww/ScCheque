@@ -9,3 +9,13 @@ Instalação no Windows
     se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
   Só funciona no windows (restrição da empresa Bematech)
+
+
+
+Como adicionar cheques de novos Bancos
+
+  Para adicionar novos cheques de bancos, ou modificar existentes será necessário editar o arquivo C:\Windows\BEMADP32.ini
+  Não é necessário reiniciar o computador
+  Caso as modificações não estejam funcionando:
+    APAGUE o arquivo C:\Users\NOME DO SEU USUário\AppData\Local\VirtualStore\Windows\BEMADP32.ini
+    Ou: use a busca do windows e apague os arquivos BEMADP32.ini que NÃO estão dentro de C:\Windows
