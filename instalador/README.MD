@@ -1,4 +1,4 @@
-# Instalação
+# Instalação no Windows
 
   Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows
 
@@ -7,6 +7,8 @@
   Execute o arquivo instalar_navegador.reg 
       
     se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
+
+  Só funcinoa no windows (restrição da empresa Bematech)
 
 # Como Imprimir
 
