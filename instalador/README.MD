@@ -1,10 +1,10 @@
 # Instalação no Windows
 
-  Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows
+  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows (caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo
 
-  Copie ScCheque.exe para a pasta C:
+  2 - Copie ScCheque.exe para a pasta C:
   
-  Execute o arquivo instalar_navegador.reg 
+  3 - Execute o arquivo instalar_navegador.reg 
       
     se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
