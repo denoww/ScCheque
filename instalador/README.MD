@@ -4,7 +4,8 @@
 
   Copie ScCheque.exe para a pasta C:
   
-  Execute o arquivo instalar_navegador.reg
+  Execute o arquivo instalar_navegador.reg 
+    (se esse passo der erro nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
 # Como Imprimir
 
