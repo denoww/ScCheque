@@ -1,6 +1,6 @@
 # Instalação no Windows
 
-  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows **(caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo**
+  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows **(caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo - NÃO QUEREMOS DESCONFIGURAR TODOS OS SEUS CHEQUES**
 
   2 - Copie ScCheque.exe para a pasta C:
   
