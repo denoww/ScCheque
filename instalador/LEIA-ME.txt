@@ -12,7 +12,7 @@ Instalação no Windows
 
 
 
-Como adicionar cheques de novos Bancos
+Como mofificar ou adicionar layouts de cheques
 
   Para adicionar novos cheques de bancos, ou modificar existentes será necessário editar o arquivo C:\Windows\BEMADP32.ini
   Não é necessário reiniciar o computador
