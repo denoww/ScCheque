@@ -46,7 +46,7 @@ C:\ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" "Bom p/ 01/01/2
 
   Pression ENTER
 
-# Como adicionar cheques de novos Bancos
+# Como mofificar ou adicionar layouts de cheques
 
     Para adicionar novos cheques de bancos, ou modificar existentes será necessário editar o arquivo C:\Windows\BEMADP32.ini
     Não é necessário reiniciar o computador
