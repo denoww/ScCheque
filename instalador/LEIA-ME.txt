@@ -6,9 +6,10 @@ Instalação no Windows
   
   3 - Execute o arquivo instalar_navegador.reg 
       
-    Se este último passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
+    Se este último passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
-  Só funciona no windows (restrição da impressora Bematech)
+  
+  4 - Observação: Só funciona no windows (restrição da impressora Bematech)
 
 
 
