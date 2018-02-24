@@ -1,14 +1,14 @@
 Instalação no Windows
 
-  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows **(caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo - NÃO QUEREMOS DESCONFIGURAR OS LAYOUTS DE CHEQUES DE TODOS OS SEUS BANCOS**
+  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows (caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo - NÃO QUEREMOS DESCONFIGURAR OS LAYOUTS DE CHEQUES DE TODOS OS SEUS BANCOS
 
   2 - Copie ScCheque.exe para a pasta C:
   
   3 - Execute o arquivo instalar_navegador.reg 
       
-    se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
+    Se este último passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
-  Só funciona no windows (restrição da empresa Bematech)
+  Só funciona no windows (restrição da impressora Bematech)
 
 
 
