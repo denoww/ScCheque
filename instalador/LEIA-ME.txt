@@ -9,7 +9,7 @@ Instalação no Windows
     Se este último passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
 
   
-  4 - Observação: Só funciona no windows (restrição da impressora Bematech)
+  4 - Observação: Só funciona no windows (restrição da impressora Bematech DP-20)
 
 
 
