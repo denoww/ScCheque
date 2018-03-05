@@ -1,10 +1,14 @@
-# Instalação
+# Instalação no Windows
 
-  Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows
+  1 - Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows **(caso já tenha a impressora funcionando com outro software você DEVE PULAR este passo - NÃO QUEREMOS DESCONFIGURAR OS LAYOUTS DE CHEQUES DE TODOS OS SEUS BANCOS**
 
-  Copie ScCheque.exe para a pasta C:
+  2 - Copie ScCheque.exe para a pasta C:
   
-  Execute o arquivo instalar_navegador.reg
+  3 - Execute o arquivo instalar_navegador.reg 
+      
+    se este ultimo passo der erro, nos notifique para gerarmos o mesmo arquivo a partir do seu computador
+
+  Só funciona no windows (restrição da empresa Bematech)
 
 # Como Imprimir
 
@@ -41,4 +45,12 @@ C:\ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" "Bom p/ 01/01/2
 ```
 
   Pression ENTER
+
+# Como mofificar ou adicionar layouts de cheques
+
+    Para adicionar novos cheques de bancos, ou modificar existentes será necessário editar o arquivo C:\Windows\BEMADP32.ini
+    Não é necessário reiniciar o computador
+    Caso as modificações não estejam funcionando:
+      APAGUE o arquivo C:\Users\NOME DO SEU USUário\AppData\Local\VirtualStore\Windows\BEMADP32.ini
+      Ou: use a busca do windows e apague os arquivos BEMADP32.ini que NÃO estão dentro de C:\Windows
 

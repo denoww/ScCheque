@@ -1,6 +1,0 @@
-Instalação
-  Copie todos os arquivos que estão dentro da pasta DLL para C:\Windows
-  Copie ScCheque.exe para a pasta C:
-  Execute o arquivo instalar_navegador.reg
-
-
