@@ -25,9 +25,9 @@ type
   end;
 
 var
-  portas : array[0..8] of string = ('COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM6', 'LPT1', 'LPT2', 'LPT3');
+  portas : array[0..12] of string = ('COM1', 'COM2', 'COM3', 'COM4', 'COM5', 'COM6', 'COM7', 'COM8', 'COM9', 'COM10', 'LPT1', 'LPT2', 'LPT3');
   Form1: TForm1;
-  i, retornoPorta, retornoImpressao : integer;
+  i, algumaPortaAberta, retornoPorta, retornoImpressao : integer;
   msgParamsEnviados, msg_validacao, msg, data, cidade, favorecido, porta, banco, valor: string;
   helpCommand : string = 'Parâmetros Inválidos. Tente o comando: ScCheque.exe "001" "150,00" "Curitiba" "3112018" "Jose Silva" "Bom p/ 01/01/2019"';
 
@@ -88,17 +88,17 @@ implementation
         end;
     end;
 
-  procedure abrirPorta();
-    begin
-      for i := 0 to (length(portas)-1) do
-        begin
-          porta := portas[i];
-          // alert(porta);
-          retornoPorta := Bematech_DP_IniciaPorta(porta);
-          if retornoPorta = 1 then
-            Break;
-        end;
-    end;
+  // procedure abrirPorta();
+  //   begin
+  //     for i := 0 to (length(portas)-1) do
+  //       begin
+  //         porta := portas[i];
+  //         // alert(porta);
+  //         retornoPorta := Bematech_DP_IniciaPorta(porta);
+  //         if retornoPorta = 1 then
+  //           Break;
+  //       end;
+  //   end;
 
   procedure imprimir(Banco: string; Valor: string; Favorecido: string; Cidade: string; Data: string; Mensagem: string);
     begin
@@ -115,13 +115,32 @@ implementation
 
   procedure tentarImprimir();
     begin
-      abrirPorta();
-      if retornoPorta = 0 then
+      algumaPortaAberta := 0;
+      for i := 0 to (length(portas)-1) do
+        begin
+          porta := portas[i];
+          // alert(porta);
+          retornoPorta := Bematech_DP_IniciaPorta(porta);
+          if retornoPorta = 1 then
+            begin
+              algumaPortaAberta := 1;
+              imprimir(banco, valor, favorecido, cidade, data, msg);
+              Bematech_DP_FechaPorta();
+              // Break;
+            end;
+        end;
+      if algumaPortaAberta = 0 then    
         alert('Erro ao abrir portas');
-      if retornoPorta = 1 then // sucesso
-        imprimir(banco, valor, favorecido, cidade, data, msg);
-      Bematech_DP_FechaPorta();
     end;
+
+    // begin
+    //   abrirPorta();
+    //   if retornoPorta = 0 then
+    //     alert('Erro ao abrir portas');
+    //   if retornoPorta = 1 then // sucesso
+    //     imprimir(banco, valor, favorecido, cidade, data, msg);
+    //   Bematech_DP_FechaPorta();
+    // end;
 
 {$R *.dfm}
 
